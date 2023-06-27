@@ -3,14 +3,29 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { HomeComponent } from './pages/home/home.component';
+import { HttpClientModule } from '@angular/common/http';
+import { CardComponent } from './components/card/card.component';
+import { DetailComponent } from './pages/detail/detail.component';
+import { ImgMissingDirective } from './directives/img-missing.directive';
+import { HeaderComponent } from './components/header/header.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    HomeComponent,
+    CardComponent,
+    DetailComponent,
+    ImgMissingDirective,
+    HeaderComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule,
+  ],
+  exports: [
+    ImgMissingDirective
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,0 +1,25 @@
+.poster{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 150px;
+    margin-bottom: 15px;
+    .poster__image{
+        border-radius: 7px;
+        width: 150px;
+    }
+
+    .poster__content{
+        a{
+            font-weight: bold;
+        }
+        a, p{
+            color: #858f95;
+            text-align: center;
+            display: block;
+        }
+        p{
+            margin-top: 10px;
+        }
+    }
+}

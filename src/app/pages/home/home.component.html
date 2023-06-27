@@ -1,0 +1,9 @@
+<app-header></app-header>
+<div class="main-container">
+    <div class="movies-container">
+        <ng-container *ngFor="let movie of moviesList">
+            <app-card [model]="movie"></app-card>
+        </ng-container>
+    </div>
+    <button class="btn" type="button" (click)="seeMoreMovies('now_playing', currentPage)">Ver más</button>
+</div>

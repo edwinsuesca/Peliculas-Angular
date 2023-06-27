@@ -1,1 +1,26 @@
 /* You can add global styles to this file, and also import other style files */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body{
+    background-color: #252e34;
+}
+
+.btn{
+    font-size: 20px;
+    color: white;
+    background-color: #0093d7;
+    padding: 10px 20px;
+    border-radius: 4px;
+    border: none;
+    user-select: none;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    &:hover{
+        scale: 1.05;
+    }
+}

@@ -1,0 +1,17 @@
+<div class="poster">
+  <a [routerLink]="'/movies/' + model.id"
+     [title]="'Ir a ' + model.title">
+    <img class="poster__image" loading="lazy" [src]="'https://image.tmdb.org/t/p/w220_and_h330_face/' + model['poster_path']"
+         srcset="https://image.tmdb.org/t/p/w220_and_h330_face/{{model['poster_path']}} 1x,
+         https://image.tmdb.org/t/p/w440_and_h660_face/{{model['poster_path']}} 2x"
+         [alt]="model.title" appImgMissingDirective>
+  </a>
+
+  <div class="poster__content">
+    <a>{{model.title}}</a>
+    <p *ngIf="model['release_date']">
+      {{model['release_date'] | date}}
+    </p>
+  </div>
+
+</div>
